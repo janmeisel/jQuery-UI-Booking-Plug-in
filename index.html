@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>java</title>
+<link href="jquery-mobile/jquery.mobile.theme-1.3.0.min.css" rel="stylesheet" type="text/css">
+<link href="jquery-mobile/jquery.mobile.structure-1.3.0.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<script src="jquery-mobile/jquery-1.11.1.min.js"></script>
+<script src="jquery-mobile/jquery.mobile-1.3.0.min.js"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<style>
+	@charset "utf-8";
+.ui-block-a, .ui-block-b,
+.ui-block-c, .ui-block-d {
+	text-align:center;
+	}
+@media all and (max-width: 55em) {
+	
+.my-breakpoint .ui-block-a,
+  .my-breakpoint .ui-block-b,
+  .my-breakpoint .ui-block-c,
+  .my-breakpoint .ui-block-d {
+    width: 50%;
+    float:none; 
+	text-align:center;
+  }
+  	.grid-1-wigets {
+	margin-top: 10px !important;
+}
+}
+@media all and (max-width: 50em){
+	.my-breakpoint .ui-block-a,
+  .my-breakpoint .ui-block-b,
+  .my-breakpoint .ui-block-c,
+  .my-breakpoint .ui-block-d {
+    width: 50%;
+    float:none; 
+	text-align:center;
+  }
+  .ui-page{    
+  background-size: 100%;
+	}
+	#hide {
+        display: none;
+    }
+}
+@media all and (max-width: 40em){
+	.my-breakpoint .ui-block-a,
+  .my-breakpoint .ui-block-b,
+  .my-breakpoint .ui-block-c,
+  .my-breakpoint .ui-block-d {
+    width: 70%;
+    float:none;
+	text-align:center;
+	  }
+.ui-page{
+
+	}
+}
+@media all and (max-width: 25em){
+	.my-breakpoint .ui-block-a,
+  .my-breakpoint .ui-block-b,
+  .my-breakpoint .ui-block-c,
+  .my-breakpoint .ui-block-d {
+    width: 100% !important;
+    float:none;
+	 text-align:center;
+  }
+    #hide {
+        display: none;
+}
+.page-background{
+   background-color:#D7D7D7;
+   background-repeat: no-repeat;
+    background-size: 100%;
+	}
+</style>
+
+
+<div data-role="page" id="page">
+  <div data-role="header">
+    <h1>Header</h1>
+  </div>
+  <div data-role="content">
+    <div class="ui-grid-d my-breakpoint">
+      <div class="ui-block-a">Block 1,1</div>
+      <div class="ui-block-b">
+        <div data-role="fieldcontain">
+          <label for="selectmenu" class="select"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></label>
+          <select name="selectmenu" id="selectmenu">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+        </div>
+      	
+      	
+      </div>
+      <div class="ui-block-c">
+        <div data-role="fieldcontain">
+          <label for="selectmenu2" class="select"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></label>
+          <select name="selectmenu2" id="selectmenu2">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+        </div>
+      </div>
+      <div class="ui-block-d">
+        <div class="ui-grid-a">
+          <div class="ui-block-a" style="width: 50%;">
+            <div data-role="fieldcontain">
+              <label for="selectmenu3" class="select"></label>
+              <select name="selectmenu3" id="selectmenu3">
+                <option value="option1"></option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
+            </div>
+          </div>
+          <div class="ui-block-b" style="width: 50%;">
+            <div data-role="fieldcontain">
+              <label for="selectmenu4" class="select"></label>
+              <select name="selectmenu4" id="selectmenu4">
+                <option value="option1"></option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      	
+      	
+      </div>
+      <div class="ui-block-e">Block 1,5</div>
+      <div class="ui-block-a">Block 2,1</div>
+      <div class="ui-block-b">
+        <div data-role="fieldcontain">
+          <label for="date">Date:</label>
+          <input type="date" name="date" id="date" value=""  />
+        </div>
+      </div>
+      <div class="ui-block-c">
+        <div data-role="fieldcontain">
+          <label for="date2">Date:</label>
+          <input type="date" name="date2" id="date2" value=""  />
+        </div>
+      </div>
+      <div class="ui-block-d">
+      	<button class="show-page-loading-msg" data-theme="b" data-textonly="false" data-textvisible="true" data-msgtext="Please wait while we search available options
+" data-inline="true">Go <i class="fa fa-search-plus fa-lg" aria-hidden="true"></i> </button>
+      	
+      </div>
+      <div class="ui-block-e"><button class="hide-page-loading-msg" data-inline="true" data-icon="delete">Hide</button></div>
+    </div>
+  	
+  	
+  </div>
+  <div data-role="footer">
+    <h4>Footer</h4>
+  </div>
+</div>
+<script>
+	$( document ).on( "click", ".show-page-loading-msg", function() {
+    var $this = $( this ),
+        theme = $this.jqmData( "theme" ) || $.mobile.loader.prototype.options.theme,
+        msgText = $this.jqmData( "msgtext" ) || $.mobile.loader.prototype.options.text,
+        textVisible = $this.jqmData( "textvisible" ) || $.mobile.loader.prototype.options.textVisible,
+        textonly = !!$this.jqmData( "textonly" );
+        html = $this.jqmData( "html" ) || "";
+    $.mobile.loading( "show", {
+            text: msgText,
+            textVisible: textVisible,
+            theme: theme,
+            textonly: textonly,
+            html: html
+    });
+})
+.on( "click", ".hide-page-loading-msg", function() {
+    $.mobile.loading( "hide" );
+});
+	</script>
+</body>
+</html>
